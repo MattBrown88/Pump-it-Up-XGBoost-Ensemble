@@ -17,11 +17,6 @@
 #I also modified some variables to reduce the effects of missing data. Specific modifications and
 #explanation is shown in the 'Feature Selection' section of the code.
 
-#The most important features in my predictive model were: XXXXXXXXXX
-#XXXXXX
-#
-#Time elapsed to run model: user - XXXXX  system - XXXXX elapsed - XX
-
 #Load required libraries
 library(xgboost)
 library(Matrix)
