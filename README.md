@@ -20,3 +20,10 @@ Brief Model Description: Ensemble of 11 XGBoost models with equal weight to each
 Feature Selection
 The original data set contained 40 variables. I reduced it down to 26 variables by removing variables
 that were similar/duplicates of other variables.
+
+Feature Engineering
+For the construction_year and gps_height I used the median of them to replace the 0 values.
+
+I first built a model using all of the available variables. I then removed variables that were duplicates and tested the model to understand how it changed the performance. I also used the xgb.importance function to understand the variable’s influence on the model.
+
+I used an ensemble of XGBoost 11 XGBoost models only updating the random seed for each iteration. This turned out to be more accurate than a single XGBoost model with a large number of iterations and a low eta (learning rate).
